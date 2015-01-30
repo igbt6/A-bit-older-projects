@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project>
+  <Device>
+    <Manufacturer id="ST" name="ST"/>
+    <Chip id="STM32F051R8" name="STM32F051R8"/>
+  </Device>
+  <Components>
+    <Component id="c37a9351-96ed-11df-80ae-001d7d723e56" name="C Library"/>
+    <Component id="bfabb101-96ed-11df-80ae-001d7d723e56" name="M0 Cmsis Core"/>
+    <Component id="f45890d0-091e-11e2-955d-0016ecbf7044" name="CMSIS BOOT"/>
+    <Component id="8cecc6e0-091f-11e2-955d-0016ecbf7044" name="RCC"/>
+    <Component id="2e9c87f0-0920-11e2-955d-0016ecbf7044" name="MISC"/>
+    <Component id="6e743850-0920-11e2-955d-0016ecbf7044" name="GPIO"/>
+    <Component id="439dd4f0-0935-11e2-955d-0016ecbf7044" name="EXTI"/>
+    <Component id="e23ec800-0938-11e2-955d-0016ecbf7044" name="SYSCFG"/>
+    <Component id="4ab3cf20-0939-11e2-955d-0016ecbf7044" name="USART"/>
+  </Components>
+  <ExcludedFiles/>
+  <Drivers/>
+</Project>

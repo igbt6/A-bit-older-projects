@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G">
+  <Target name="test_stm32_M4F_Flash" isCurrent="0">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UseCLib" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="C:\CooCox\CoIDE\workspace\test_stm32_M4F_Flash\link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="C:/CooCox/CoIDE/workspace/domofon"/>
+        <Option name="Name" value="test_stm32_M4F_Flash"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="../../flash/stm32f4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Target name="test_stm32_M4F_RAM" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UseCLib" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="0">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="C:\CooCox\CoIDE\workspace\test_stm32_M4F_RAM\link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="C:/CooCox/CoIDE/workspace/domofon"/>
+        <Option name="Name" value="test_stm32_M4F_RAM"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="../../flash/stm32f4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="500" name="CMSIS BOOT" path="" type="2"/>
+    <Component id="501" name="RCC" path="" type="2"/>
+    <Component id="530" name="STMF4CoOS" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="STMF4CoOS/Debug/obj/port.o" path="STMF4CoOS/Debug/obj/port.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/portable/arch.c" path="STMF4CoOS/CoOS/portable/arch.c" type="1"/>
+    <File name="STMF4CoOS/Debug/obj" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/serviceReq.c" path="STMF4CoOS/CoOS/kernel/serviceReq.c" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsMutex.h" path="STMF4CoOS/CoOS/kernel/OsMutex.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/timer.o" path="STMF4CoOS/Debug/obj/timer.o" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/startup/startup_stm32f4xx.c" path="STMF4CoOS/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/timer.c" path="STMF4CoOS/CoOS/kernel/timer.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsCore.h" path="STMF4CoOS/CoOS/kernel/OsCore.h" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/system_stm32f4xx.c" path="STMF4CoOS/cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/portable/OsArch.h" path="STMF4CoOS/CoOS/portable/OsArch.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsFlag.h" path="STMF4CoOS/CoOS/kernel/OsFlag.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/sem.o" path="STMF4CoOS/Debug/obj/sem.o" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/event.o" path="STMF4CoOS/Debug/obj/event.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsTask.h" path="STMF4CoOS/CoOS/kernel/OsTask.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsQueue.h" path="STMF4CoOS/CoOS/kernel/OsQueue.h" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/stm32f4xx_conf.h" path="STMF4CoOS/cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/mutex.c" path="STMF4CoOS/CoOS/kernel/mutex.c" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/core.o" path="STMF4CoOS/Debug/obj/core.o" type="1"/>
+    <File name="STMF4CoOS/cmsis/core_cm4.h" path="STMF4CoOS/cmsis/core_cm4.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/kernelHeap.o" path="STMF4CoOS/Debug/obj/kernelHeap.o" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="STMF4CoOS/cmsis" path="" type="2"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/sem.c" path="STMF4CoOS/CoOS/kernel/sem.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/portable" path="" type="2"/>
+    <File name="STMF4CoOS" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsConfig.h" path="STMF4CoOS/CoOS/kernel/OsConfig.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/kernelHeap.c" path="STMF4CoOS/CoOS/kernel/kernelHeap.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsKernelHeap.h" path="STMF4CoOS/CoOS/kernel/OsKernelHeap.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="STMF4CoOS/Debug/bin/STMF4CoOS.elf" path="STMF4CoOS/Debug/bin/STMF4CoOS.elf" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="STMF4CoOS/STMF4CoOS.elf.xcodeproj" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/core.c" path="STMF4CoOS/CoOS/kernel/core.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/time.c" path="STMF4CoOS/CoOS/kernel/time.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/portable/GCC" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/flag.c" path="STMF4CoOS/CoOS/kernel/flag.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/coocox.h" path="STMF4CoOS/CoOS/kernel/coocox.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/event.c" path="STMF4CoOS/CoOS/kernel/event.c" type="1"/>
+    <File name="STMF4CoOS/cmsis/core_cmFunc.h" path="STMF4CoOS/cmsis/core_cmFunc.h" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/startup" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsEvent.h" path="STMF4CoOS/CoOS/kernel/OsEvent.h" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/stm32f4xx.h" path="STMF4CoOS/cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/utility.h" path="STMF4CoOS/CoOS/kernel/utility.h" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/queue.c" path="STMF4CoOS/CoOS/kernel/queue.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/Document/readme.txt" path="STMF4CoOS/CoOS/Document/readme.txt" type="1"/>
+    <File name="STMF4CoOS/Debug" path="" type="2"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="STMF4CoOS/Debug/bin/history.xml" path="STMF4CoOS/Debug/bin/history.xml" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/time.o" path="STMF4CoOS/Debug/obj/time.o" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/startup_stm32f4xx.o" path="STMF4CoOS/Debug/obj/startup_stm32f4xx.o" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="STMF4CoOS/Debug/bin/STMF4CoOS.txt" path="STMF4CoOS/Debug/bin/STMF4CoOS.txt" type="1"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="STMF4CoOS/build.xml" path="STMF4CoOS/build.xml" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel" path="" type="2"/>
+    <File name="STMF4CoOS/Debug/obj/arch.o" path="STMF4CoOS/Debug/obj/arch.o" type="1"/>
+    <File name="STMF4CoOS/main.c" path="STMF4CoOS/main.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsMM.h" path="STMF4CoOS/CoOS/kernel/OsMM.h" type="1"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="STMF4CoOS/Debug/obj/serviceReq.o" path="STMF4CoOS/Debug/obj/serviceReq.o" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/mbox.o" path="STMF4CoOS/Debug/obj/mbox.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/CoOS.h" path="STMF4CoOS/CoOS/kernel/CoOS.h" type="1"/>
+    <File name="STMF4CoOS/cmsis/core_cmInstr.h" path="STMF4CoOS/cmsis/core_cmInstr.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/main.o" path="STMF4CoOS/Debug/obj/main.o" type="1"/>
+    <File name="STMF4CoOS/CoOS" path="" type="2"/>
+    <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="STMF4CoOS/Debug/bin" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/portable/GCC/port.c" path="STMF4CoOS/CoOS/portable/GCC/port.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsServiceReq.h" path="STMF4CoOS/CoOS/kernel/OsServiceReq.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/queue.o" path="STMF4CoOS/Debug/obj/queue.o" type="1"/>
+    <File name="STMF4CoOS/cmsis_boot/system_stm32f4xx.h" path="STMF4CoOS/cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/flag.o" path="STMF4CoOS/Debug/obj/flag.o" type="1"/>
+    <File name="STMF4CoOS/cmsis/core_cm4_simd.h" path="STMF4CoOS/cmsis/core_cm4_simd.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/mutex.o" path="STMF4CoOS/Debug/obj/mutex.o" type="1"/>
+    <File name="STMF4CoOS/Debug/bin/STMF4CoOS.hex" path="STMF4CoOS/Debug/bin/STMF4CoOS.hex" type="1"/>
+    <File name="STMF4CoOS/Debug/bin/STMF4CoOS.bin" path="STMF4CoOS/Debug/bin/STMF4CoOS.bin" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/hook.o" path="STMF4CoOS/Debug/obj/hook.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsTimer.h" path="STMF4CoOS/CoOS/kernel/OsTimer.h" type="1"/>
+    <File name="STMF4CoOS/MKSCAT.elf.xcodeproj/project.pbxproj" path="STMF4CoOS/MKSCAT.elf.xcodeproj/project.pbxproj" type="1"/>
+    <File name="STMF4CoOS/STMF4CoOS.elf.xcodeproj/project.pbxproj" path="STMF4CoOS/STMF4CoOS.elf.xcodeproj/project.pbxproj" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/task.o" path="STMF4CoOS/Debug/obj/task.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsTime.h" path="STMF4CoOS/CoOS/kernel/OsTime.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/mm.o" path="STMF4CoOS/Debug/obj/mm.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/OsError.h" path="STMF4CoOS/CoOS/kernel/OsError.h" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/history.xml" path="STMF4CoOS/Debug/obj/history.xml" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/utility.o" path="STMF4CoOS/Debug/obj/utility.o" type="1"/>
+    <File name="STMF4CoOS/Debug/bin/STMF4CoOS.map" path="STMF4CoOS/Debug/bin/STMF4CoOS.map" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/mbox.c" path="STMF4CoOS/CoOS/kernel/mbox.c" type="1"/>
+    <File name="STMF4CoOS/Debug/obj/system_stm32f4xx.o" path="STMF4CoOS/Debug/obj/system_stm32f4xx.o" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/task.c" path="STMF4CoOS/CoOS/kernel/task.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/hook.c" path="STMF4CoOS/CoOS/kernel/hook.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/kernel/mm.c" path="STMF4CoOS/CoOS/kernel/mm.c" type="1"/>
+    <File name="STMF4CoOS/CoOS/Document" path="" type="2"/>
+    <File name="STMF4CoOS/CoOS/kernel/utility.c" path="STMF4CoOS/CoOS/kernel/utility.c" type="1"/>
+    <File name="STMF4CoOS/MKSCAT.elf.xcodeproj" path="" type="2"/>
+  </Files>
+</Project>

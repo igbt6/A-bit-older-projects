@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<History> 
+  <File usedCount="2" path="stm_lib/inc/stm32f0xx_dac.h"/>  
+  <File usedCount="2" path="stm_lib/src/stm32f0xx_dac.c"/> 
+</History>
